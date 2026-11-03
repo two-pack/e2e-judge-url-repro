@@ -1,0 +1,17 @@
+{
+  "name": "e2e-judge-url-repro",
+  "private": true,
+  "type": "module",
+  "description": "agent.assert and agent.waitFor cannot judge the current URL",
+  "scripts": {
+    "test": "e2e run",
+    "test:stub": "MODEL_URL=http://127.0.0.1:4174/v1 MODEL_NAME=stub e2e run"
+  },
+  "devDependencies": {
+    "@ai-sdk/openai": "^4.0.107",
+    "@ai-sdk/openai-compatible": "^3.0.62",
+    "@e2e-dev/web": "0.15.4",
+    "ai": "^7.0.0",
+    "e2e": "0.22.0"
+  }
+}
