@@ -1,5 +1,7 @@
 # agent.assert and agent.waitFor cannot judge the current URL
 
+Reproduction for [tester-army/e2e#1514](https://github.com/tester-army/e2e/issues/1514).
+
 The built-in judge never receives the current URL, so an instruction about it
 fails even when the address matches. `buildPrompt` leaves `observation.path`
 out of `<observation>`.
